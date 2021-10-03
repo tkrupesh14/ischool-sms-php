@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,100&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f9ff;
+  
+}
+body{
+    font-family: poppins;
+}
+
+
+/* navbar style */
+a{
+    text-decoration: none;
+    color: #2196F3;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 4%;
+    box-shadow: 10px 3px 10px 10px #d6ecff;
+}
+.logo{
+    cursor: pointer;
+    color: #2196F3;
+    transition:all 0.2s ease;
+}
+.logo:hover{
+    color: #46acff;
+}
+.nav-links{
+    list-style: none;
+}
+.nav-links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav-links li a{
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+    height: 20px;
+}
+.nav-links li a:hover{
+    background:#2196F3;
+    color:#fff;
+    border-radius: 50px;
+}
+.cta button{
+    padding: 9px 25px;
+    background: #2196F3;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    height: 40px;
+    transition: all 0.2s ease-in-out;
+}
+.cta button:hover{
+    background: transparent;
+    border: 2px solid #2196F3;
+    color: #2196F3;
+}
+
+/* hero styling */
+.hero{
+    display: grid;
+    grid-template-columns: repeat(2, 700px 1fr);
+    align-items: center;
+    margin-top: 30px;
+
+}
+.hero-content{
+    margin-left: 60px;
+    margin-bottom: 100px;
+}
+.hero-content h1{
+    font-size: 40px;
+}
+.hero-content h3{
+    margin-top: -10px;
+    font-size: 25px;
+    color: #2196F3;
+}
+.hero-content hr{
+    width: 130px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-top: 20px;
+    border-color: #2196F3;
+}
+.hero-content .btn{
+    margin-top: 20px;
+    border: 2px solid #2196F3;
+    color: #2196F3;
+    outline: none;
+    padding: 15px 45px;
+    background: transparent;
+    border-radius: 50px;
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.hero-content .btn:hover{
+    transform: translateY(5px);
+    color: #f1f9ff;
+    background-color: #2196F3;
+}
+.hero-content .btn1{
+    background: #2196F3;
+    color: #f1f9ff;
+}
+.hero-content .btn1:hover{
+    color: #2196F3;
+    background: transparent;
+}
+
+.hero-image img{
+    width: 650px;
+    margin-top: 20px;
+    margin-left: 15px;
+    
+}
+.section-over{
+    margin-top: 20px;
+    border: 1px solid #2196F3;
+}
