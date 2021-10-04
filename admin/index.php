@@ -119,7 +119,11 @@
                             </div>
                         </div>
                     </div>
-                     
+                     <!-- charts -->
+                   
+
+
+    <div id="piechart_3d" style="width: 500px; height: 300px; background:transparent;"></div>
                 </div>
             </div>
 
@@ -139,5 +143,28 @@
         <!-- Popper -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.1/umd/popper.min.js" integrity="sha512-8jeQKzUKh/0pqnK24AfqZYxlQ8JdQjl9gGONwGwKbJiEaAPkD3eoIjz3IuX4IrP+dnxkchGUeWdXLazLHin+UQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+        <!-- charts js -->
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Users', 'Hours per Day'],
+          ['Students',     3000],
+          ['Faculty',      200],
+          ['Parents', 900]
+     
+        ]);
+
+        var options = {
+          title: 'Total Users',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+      }
+    </script>
 </body>
 </html>

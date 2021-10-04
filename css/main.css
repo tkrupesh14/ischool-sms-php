@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     background-color: #f1f9ff;
-  
+  scroll-behavior: smooth;
 }
 body{
     font-family: poppins;
@@ -130,4 +130,65 @@ header{
 .section-over{
     margin-top: 20px;
     border: 1px solid #2196F3;
+    margin-bottom: 20px;
+
+}
+.courses .title h1{
+    text-align: center;
+}
+.courses .title h1::first-letter{
+    color: #2196F3;
+}
+.courses .title .under-title{
+    width: 8%;
+    border: 1px solid #2196F3;
+
+
+}
+.box{
+    width: 350px;
+    height: 250px;
+    position: relative;
+    display: inline-block;
+    margin-left: 70px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+
+}
+.box .front,
+.box .back{
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    background: #fff;
+    backface-visibility: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 5px 30px rgba(163, 61, 21, 0.200),
+                                0 -5px 30px rgba(115, 55, 212, 0.200);
+    transition: transform .4s;
+}
+.box .back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: perspective(800px) rotateX(-180deg);
+}
+.box .back p{
+    margin: 10px 20px;
+    text-align: center;
+}
+.box .front img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+ 
+}
+.box:hover .front{
+    transform: perspective(800px) rotateX(-180px);
+}
+.box:hover .back{
+    transform: perspective(800px) rotateX(0deg);
 }

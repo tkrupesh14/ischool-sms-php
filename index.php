@@ -17,7 +17,7 @@
         <nav class="menu">
             <ul class="nav-links">
                 <li class="links"><a href="#">Home</a></li>
-                <li class="links"><a href="#">Courses</a></li>
+                <li class="links"><a href="#courses">Courses</a></li>
                 <li class="links"><a href="#">About Us</a></li>
                 <li class="links"><a href="#">Contact Us</a></li>
             </ul>
@@ -35,7 +35,7 @@
         <hr>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis praesentium repellendus amet vero, ut debitis et similique explicabo ex quod.</p>
 
-        <button class="btn btn1">Explore</button>
+     <a href="#courses">   <button class="btn btn1">Explore</button></a>
         <button class="btn btn2">Dashboard</button>
     </div>
     
@@ -45,5 +45,40 @@
     </div>
     </div>
     <hr class="section-over">
+
+    <!-- courses section -->
+    <div class="courses" id="courses">
+        <div class="title">
+            <h1>Courses</h1>
+            <center> <hr class="under-title"> </center>
+        </div>
+        <div class="box">
+            <div class="front">
+                <img src="./assets/Images/courses/bca.jpg" alt="">
+            </div>
+            <div class="back">
+                <h1>BCA</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sit nostrum nemo ea commodi quae expedita mollitia at ipsum ratione.</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="front">
+                <img src="./assets/Images/courses/bsc-it.jpg" alt="">
+            </div>
+            <div class="back">
+                <h1>BSC IT</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sit nostrum nemo ea commodi quae expedita mollitia at ipsum ratione.</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="front">
+                <img src="./assets/Images/courses/bsc-sci.jpg" alt="">
+            </div>
+            <div class="back">
+                <h1>BSC</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sit nostrum nemo ea commodi quae expedita mollitia at ipsum ratione.</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
