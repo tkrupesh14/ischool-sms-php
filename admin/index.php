@@ -16,7 +16,7 @@
       rel="stylesheet">
 
             <!-- custom css -->
-            <link rel="stylesheet" href="./css/style.css">
+            <link rel="stylesheet" href="./css/style.css?v=<?php echo time(); ?>">
 
 </head>
 <body>
@@ -151,9 +151,11 @@
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
           ['Users', 'Hours per Day'],
-          ['Students',     3000],
-          ['Faculty',      200],
-          ['Parents', 900]
+          ['Students',     300],
+          ['Faculty',      8],
+          ['Courses', 3],
+          ['Exams', 10],
+
      
         ]);
 

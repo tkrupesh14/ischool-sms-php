@@ -22,7 +22,7 @@
                 <li class="links"><a href="#">Contact Us</a></li>
             </ul>
         </nav>
-        <a href="#" class="cta"><button>Dashboard</button></a>
+        <a href="./login.php" class="cta"><button>Dashboard</button></a>
     </header>
 
     <!-- hero section -->
